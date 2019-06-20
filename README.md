@@ -1,6 +1,6 @@
 # Angular Bookmark application, redux version 1.0
 
-Application is made using angular-redux/store
+Application is made using **angular-redux/store**
 
 <img width="960" alt="Redux" src="https://user-images.githubusercontent.com/23738327/58294174-f6429280-7dc8-11e9-906f-8db2beb65d93.png">
 
