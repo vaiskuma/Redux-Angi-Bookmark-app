@@ -6,6 +6,7 @@ Application is made using **angular-redux/store**
 
 
 ### Technicalities
+- The backend NodeJs can be found here: https://github.com/vaiskuma/nodeServer/blob/master/app.js
 - It should be built using Angular (NOT angular.js)
 - The endpoint for retrieving the list bookmarks is a node.js backend app
 - You may use any additional libraries
