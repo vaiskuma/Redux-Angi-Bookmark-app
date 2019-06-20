@@ -1,0 +1,62 @@
+<h6>Create Article:</h6>
+<form (ngSubmit)="onSubmit()" #articleForm="ngForm">
+  <div class="form-row">
+    <div class="col-auto">
+        <input 
+          type="text" 
+          class="form-control" 
+          placeholder="Title"
+          id="title"
+          [(ngModel)]="model.title"
+          name="title"
+          #title="ngModel">
+    </div>
+    <div class="col-auto">
+      <input 
+        type="text" 
+        class="form-control" 
+        placeholder="Link"
+        id="link"
+        [(ngModel)]="model.link"
+        name="link"
+        #link="ngModel">
+    </div>
+    <div class="col-auto">
+      <input 
+        type="text" 
+        class="form-control" 
+        placeholder="Tag"
+        id="tag"
+        [(ngModel)]="model.tag"
+        name="tag"
+        #tag="ngModel">
+    </div>
+    <div class="col-auto">
+      <button type="submit" class="btn btn-primary">Create</button>
+    </div>
+  </div>
+</form>
+<br />
+<h6>Articles List:</h6>
+<div *ngIf="(articles | async)?.length!=0">
+<table class="table">
+  <thead class="thead-inverse">
+    <tr>
+      <th>#</th>
+      <th>Article title</th>
+      <th>Link</th>
+      <th>Tag</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let t of articles | async">
+      <td><span (click)="toggleArticle(t)"></span></td>
+      <td><span (click)="toggleArticle(t)">{{ t.title }}</span></td>
+      <td><span (click)="toggleArticle(t)">{{ t.link }}</span></td>
+      <td><span (click)="toggleArticle(t)">{{ t.tag }}</span></td>
+      <td><button class="btn btn-primary" (click)="removeArticle(t)">Delete</button></td>
+    </tr>
+  </tbody>
+</table>
+</div>
