@@ -1,10 +1,12 @@
 # Angular Bookmark application, redux version 1.0
 
+Application is made using angular-redux/store
+
 <img width="960" alt="Redux" src="https://user-images.githubusercontent.com/23738327/58294174-f6429280-7dc8-11e9-906f-8db2beb65d93.png">
 
 
 ### Technicalities
-- It should be e built using Angular (NOT angular.js)
+- It should be built using Angular (NOT angular.js)
 - The endpoint for retrieving the list bookmarks is a node.js backend app
 - You may use any additional libraries
 
